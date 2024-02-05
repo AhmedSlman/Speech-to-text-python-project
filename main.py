@@ -16,7 +16,7 @@ transcriber = aai.Transcriber()
 transcript = transcriber.transcribe(FILE_URL)
 print(transcript.text) #printing text 
 
-# text_speech.say(transcript.text)#هنا بيطبق اي نص بكتبه بس اتا اديته النص اللي طلع لما حولنا الصوت 
+text_speech.say(transcript.text)#هنا بيطبق اي نص بكتبه بس اتا اديته النص اللي طلع لما حولنا الصوت 
 audio_file = "output_audio.mp3"
 text_speech.save_to_file(transcript.text, audio_file)
 text_speech.runAndWait()
